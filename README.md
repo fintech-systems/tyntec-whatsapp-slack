@@ -1,6 +1,6 @@
 # Tyntec WhatsApp Slack API
 
-Cloned from the Tyntec's examples here: https://github.com/tyntec/api-samples
+Cloned from Tyntec's examples here: https://github.com/tyntec/api-samples
 
 Some minor modifications:
 
