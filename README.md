@@ -1,8 +1,17 @@
-# API Samples
+## Installation
 
-Collection of sample applications showcasing usage of tyntec APIs
+```bash
+$ npm install
+```
 
-- chat-integrations - Support Inbox integration samples
-- viber-integrations - Viber Business integration samples
-- wa-integrations - WhatsApp Business messaging integration samples
-# wabapi
+## Running the app
+
+1. Create a `.env` file
+2. Copy all the variables from `.env-example` to `.env`
+3. Fill the variables with your own values
+4. Run the server using the command below
+
+```bash
+$ npm start
+```
+

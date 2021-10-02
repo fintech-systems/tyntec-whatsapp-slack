@@ -8,7 +8,8 @@ Router.post('/', async function(req, resp) {
     if (appConfig.RESET_TOKEN != req.headers['x-reset-token']) {        
         resp.status(401).send('Unauthorized');
         return;
-    } 
+    }
+
     Channel.deleteMany({}, function(err) {
       console.log(err);
     })
@@ -16,6 +17,8 @@ Router.post('/', async function(req, resp) {
     Contact.deleteMany({}, function (err) {
       console.log(err);
     })
+
     resp.status(200).send('ok');
   })
+  
   module.exports = Router;
