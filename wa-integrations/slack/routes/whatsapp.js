@@ -49,47 +49,44 @@ Router.route('/forwardWAMessage').post(async function (req, res) {
 
   const url = 'https://slack.com/api/chat.postMessage';
 
+  // If the request body doesn't have a WhatsApp object, then let's not waste our time
   // Avoid looking for senderName
   if (req.body.whatsapp !== undefined) {
 
-  const inputBody = {
-    channel: channel.channel_id,
-    text: `*${req.body.whatsapp.senderName}*: ${req.body.content.text}`,
-  };
+    const inputBody = {
+      channel: channel.channel_id,
+      text: `*${req.body.whatsapp.senderName}*: ${req.body.content.text}`,
+    };
 
-  if (!_.startsWith(contact.thread_ts, 'no thread assigned')) {
-    inputBody.thread_ts = contact.thread_ts;
-    console.log('Thread found');
-  }
-
-  try {
-    // Send request to Slack
-    const slackRes = await Axios.post(url, inputBody, { headers: slackHeaders });
-    console.log('Slack res:', slackRes.data);
-    if (_.startsWith(contact.thread_ts, 'no thread assigned')) {
-      Contacts.findOneAndUpdate({ phone: contact.phone }, { $set: { thread_ts: slackRes.data.ts } }, function (err, doc) {
-        if (err) {
-          res.status(500).send('DB error');
-          console.log('DB update error', err);
-        } else {
-          console.log('Thread parent saved:', slackRes.data.ts);
-        }
-      });
+    if (!_.startsWith(contact.thread_ts, 'no thread assigned')) {
+      inputBody.thread_ts = contact.thread_ts;
+      console.log('Thread found');
     }
-    res.sendStatus(204);
-  } catch (error) {
-    res.sendStatus(500);
-    handleError(error);
-  }
+
+    try {
+      // Send request to Slack
+      const slackRes = await Axios.post(url, inputBody, { headers: slackHeaders });
+      console.log('Slack res:', slackRes.data);
+      if (_.startsWith(contact.thread_ts, 'no thread assigned')) {
+        Contacts.findOneAndUpdate({ phone: contact.phone }, { $set: { thread_ts: slackRes.data.ts } }, function (err, doc) {
+          if (err) {
+            res.status(500).send('DB error');
+            console.log('DB update error', err);
+          } else {
+            console.log('Thread parent saved:', slackRes.data.ts);
+          }
+        });
+      }
+      res.sendStatus(204);
+    } catch (error) {
+      res.sendStatus(500);
+      handleError(error);
+    }
 
   } else {
-
     console.log('Uh oh, req.body.whatsapp was undefined, lets dump req.body!\n');
-
     console.log(req.body);
-
   }
-
 
 });
 
