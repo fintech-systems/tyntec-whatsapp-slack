@@ -1,2 +1,0 @@
-# tyntec-mail-demo
-

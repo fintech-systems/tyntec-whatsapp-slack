@@ -64,6 +64,7 @@ Router.route('/forwardWAMessage').post(async function (req, res) {
     }
 
     try {
+      
       // Send request to Slack
       const slackRes = await Axios.post(url, inputBody, { headers: slackHeaders });
       console.log('Slack res:', slackRes.data);
