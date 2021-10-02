@@ -1,3 +1,7 @@
+# Tyntec WhatsApp Slack API
+
+## Forked from their example
+
 ## Installation
 
 ```bash
