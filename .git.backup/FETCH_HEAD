@@ -1,0 +1,15 @@
+000df4f7e48ab8b2104331dbdf52968414a69de4		branch 'master' of https://github.com/tyntec/api-samples
+89d2a92b40105532891ede07fc8f166b909e323f	not-for-merge	branch 'add_slack_media_handling' of https://github.com/tyntec/api-samples
+5f6a3792b36056e526eaf62fa44d4a38cf3076b4	not-for-merge	branch 'chore/api-update' of https://github.com/tyntec/api-samples
+73387e9f1db729c0de98aade4cc0d860f4f92a14	not-for-merge	branch 'chore/api-update-ts' of https://github.com/tyntec/api-samples
+bda359d62c290f932590a90ce1b3e55a051c4df4	not-for-merge	branch 'chore/move-hubspot' of https://github.com/tyntec/api-samples
+0ae0242ccaff48f3dfb711bf31200dafaeb505b4	not-for-merge	branch 'cmd-dynamics' of https://github.com/tyntec/api-samples
+55c47f8cd1bd10ffabf5b24ce9b62514f1bcd942	not-for-merge	branch 'dependabot/npm_and_yarn/chat-integrations/watson/path-parse-1.0.7' of https://github.com/tyntec/api-samples
+8b154ed3b8a35b689fe5f58713e3744baaad7237	not-for-merge	branch 'dev-edits' of https://github.com/tyntec/api-samples
+8fd07a53e2faf7cce202236043536621db8ee649	not-for-merge	branch 'feat/MSflows' of https://github.com/tyntec/api-samples
+285ed39efd47f742a1c4d4a243f16f0da3b5abff	not-for-merge	branch 'feat/qt26' of https://github.com/tyntec/api-samples
+fbf8d8ae298eab8f5c05fbdcdbaaf9a0f1d55ae2	not-for-merge	branch 'feat/whereby' of https://github.com/tyntec/api-samples
+3eaee81ce1b8e8aa25a4a7d148e7621f9c37ba66	not-for-merge	branch 'fix_null_index_on_wa_slack' of https://github.com/tyntec/api-samples
+ec3a70b8098928c4e9131ccacae15ab469922e71	not-for-merge	branch 'update/qt25' of https://github.com/tyntec/api-samples
+ab335b2cff1a3e1d3be03be249cfbc35e056e88b	not-for-merge	branch 'update/shopify-zendesk' of https://github.com/tyntec/api-samples
+7777ea279533a649d00dfa26d2045e0e048a9e1c	not-for-merge	branch 'update/zoho' of https://github.com/tyntec/api-samples

@@ -1,0 +1,16 @@
+# pack-refs with: peeled fully-peeled sorted 
+89d2a92b40105532891ede07fc8f166b909e323f refs/remotes/origin/add_slack_media_handling
+5f6a3792b36056e526eaf62fa44d4a38cf3076b4 refs/remotes/origin/chore/api-update
+73387e9f1db729c0de98aade4cc0d860f4f92a14 refs/remotes/origin/chore/api-update-ts
+bda359d62c290f932590a90ce1b3e55a051c4df4 refs/remotes/origin/chore/move-hubspot
+0ae0242ccaff48f3dfb711bf31200dafaeb505b4 refs/remotes/origin/cmd-dynamics
+55c47f8cd1bd10ffabf5b24ce9b62514f1bcd942 refs/remotes/origin/dependabot/npm_and_yarn/chat-integrations/watson/path-parse-1.0.7
+8b154ed3b8a35b689fe5f58713e3744baaad7237 refs/remotes/origin/dev-edits
+8fd07a53e2faf7cce202236043536621db8ee649 refs/remotes/origin/feat/MSflows
+285ed39efd47f742a1c4d4a243f16f0da3b5abff refs/remotes/origin/feat/qt26
+fbf8d8ae298eab8f5c05fbdcdbaaf9a0f1d55ae2 refs/remotes/origin/feat/whereby
+3eaee81ce1b8e8aa25a4a7d148e7621f9c37ba66 refs/remotes/origin/fix_null_index_on_wa_slack
+000df4f7e48ab8b2104331dbdf52968414a69de4 refs/remotes/origin/master
+ec3a70b8098928c4e9131ccacae15ab469922e71 refs/remotes/origin/update/qt25
+ab335b2cff1a3e1d3be03be249cfbc35e056e88b refs/remotes/origin/update/shopify-zendesk
+7777ea279533a649d00dfa26d2045e0e048a9e1c refs/remotes/origin/update/zoho
