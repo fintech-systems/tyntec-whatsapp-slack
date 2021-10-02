@@ -1,6 +1,12 @@
 # Tyntec WhatsApp Slack API
 
-## Forked from their example
+Cloned from the Tyntec's examples here: https://github.com/tyntec/api-samples
+
+Some minor modifications:
+
+- When closing a thread, do  `{ thread_ts: 'no thread assigned' }` instead of empty `thread_ts`
+- Additional error logging with time to observe residual API invocations
+- Some try / catches to show null object properties caused by pollers
 
 ## Installation
 
